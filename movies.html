@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Section</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/media_query.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <style>
+        body {
+             background-color: var(--rich-black-fogra-29);
+             color: var(--white);
+             font-family: var(--ff-inter);
+         }
+       .navbar-custom {
+           background-color: hsl(222, 25%, 10%); /* Vibrant blue */
+       }
+       .nav-link {
+           color: #fff !important; /* White text */
+           font-size: 1.1em;
+       }
+       .navbar-brand img {
+           height: 40px;
+       }
+       .custom-toggler .navbar-toggler-icon {
+           background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox%3D%220 0 30 30%22 xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath stroke%3D%22rgba%28255%2C 255%2C 255%2C 1%29%22 stroke-width%3D%222%22 stroke-linecap%3D%22round%22 stroke-miterlimit%3D%2210%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+       }
+       .form-inline .form-control {
+           margin-right: 10px;
+       }
+       @media (max-width: 767.98px) {
+           .navbar-collapse {
+               background-color: #fff;
+           }
+       }
+   </style>
+ </head>
+ <body>
+ 
+ <nav class="navbar navbar-expand-lg navbar-custom">
+   <a class="navbar-brand" href="#">
+       <img src="Images/logo Warner Bros.jpg" alt="Warner Bros">
+   </a>
+   <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav mr-auto">
+           <li class="nav-item">
+               <a class="nav-link" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="movies.html">Movies</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="tv-shows.html">TV Shows</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="apps-and-games.html">Apps and Games</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="collection.html">Collection</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="feedback.html">Feedback</a>
+           </li>
+       </ul>
+ 
+       <form class="form-inline my-2 my-lg-0">
+           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+       </form>
+   </div>
+ </nav>
+
+    <div class="container mt-5">
+        <div class="section">
+            <h2>Popular Now</h2>
+
+            <div class="movies-grid">
+
+                <div class="movie-card">
+
+                    <div class="card-head">
+                        <img src="Images/lion 600.jpg" alt="" class="card-img">
+
+                        <div class="card-overlay">
+                            <div class="bookmark">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+
+                            <div class="rating">
+                                <ion-icon name="star-outline"></ion-icon>
+                                <span>7.3</span>
+                            </div>
+                            <div class="play">
+                                <a href="videos/despicable me 4 trailer/Despicable Me 4   Official Trailer 2.mp4" class="play-trailer">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                   
+                      </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title">Lion King</h3>
+                        <div class="card-info">
+                            <span class="genre">Animation/Drama</span>
+                            <span class="year">2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="card-head">
+                        <img src="Images/Monkey man.jpeg" alt="" class="card-img">
+                        <div class="card-overlay">
+                            <div class="bookmark">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                            <div class="rating">
+                                <ion-icon name="star-outline"></ion-icon>
+                                <span>6.9</span>
+                            </div>
+                            <div class="play">
+                                <a href="videos/monkey man trailer/Monkey Man - Official Trailer.mp4" class="play-trailer">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Monkey Man</h3>
+                        <div class="card-info">
+                            <span class="genre">Action/Crime</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="card-head">
+                        <img src="Images/Minions.jpg" alt="" class="card-img">
+                        <div class="card-overlay">
+                            <div class="bookmark">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                            </div>
+                            <div class="rating">
+                                <ion-icon name="star-outline"></ion-icon>
+                                <span>6.3</span>
+                            </div>
+                            <div class="play">
+                                <a href="" class="play-trailer">
+                                    <ion-icon name="play-circle-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="card-body">
+                    <h3 class="card-title">Minions/h3>
+                    <div class="card-info">
+                        <span class="genre">Animation/Comedy</span>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="card-head">
+                    <img src="Images/money heist.jpeg" alt="" class="card-img">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                        </div>
+                        <div class="rating">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <span>8.2</span>
+                        </div>
+                        <div class="play">
+                            <a href="videos/money heist trailer/BERLIN   Official Trailer   Netflix.mp4" class="play-trailer">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Money Heist</h3>
+                    <div class="card-info">
+                        <span class="genre">Action/Crime</span>
+                        <span class="year">2021</span>
+                    </div>
+                </div>
+            </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="Images/Mutants.jpeg" alt="" class="card-img">
+                <div class="card-overlay">
+                    <div class="bookmark">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>7.3</span>
+                    </div>
+                    <div class="play">
+                        <a href="videos/despicable me 4 trailer/Despicable Me 4   Official Trailer 2.mp4" class="play-trailer">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Mutants</h3>
+                <div class="card-info">
+                    <span class="genre">Action/Comedy</span>
+                    <span class="year">2022</span>
+                </div>
+            </div>
+        </div>
+    <div class="movie-card">
+        <div class="card-head">
+            <img src="Images/Oppenheimer 230.jpg" alt="" class="card-img">
+            <div class="card-overlay">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>8.3</span>
+                </div>
+                <div class="play">
+                    <a href="videos/oppenheimer trailer/Oppenheimer   Official Trailer.mp4" class="play-trailer">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Oppenheimer</h3>
+            <div class="card-info">
+                <span class="genre">Biography/History</span>
+                <span class="year">2023</span>
+            </div>
+        </div>
+    </div>
+    <div class="movie-card">
+        <div class="card-head">
+            <img src="Images/panther.jpg" alt="" class="card-img">
+            <div class="card-overlay">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+            <div class="rating">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>7.3</span>
+            </div>
+            <div class="play">
+                <a href="C:\Users\lamer\website\videos\Marvel Studios' Black Panther - Official Trailer.mp4" class="play-trailer">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <h3 class="card-title">Black Panther</h3>
+        <div class="card-info">
+            <span class="genre">Action/Adventure</span>
+            <span class="year">2018</span>
+        </div>
+    </div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="Images/Quiet place 230 by 330.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>7.5</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\quiet place trailer\A Quiet Place (2018) - Official Teaser Trailer - Paramount Pictures.mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Quiet Place</h3>
+    <div class="card-info">
+        <span class="genre">Drama/Horror</span>
+        <span class="year">2018</span>
+    </div>
+</div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="Images/Still Born.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>5.4</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\still born trailer\Still Born - Official Trailer [HD]   A Shudder Exclusive Horror Movie.mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Still Born</h3>
+    <div class="card-info">
+        <span class="genre">Horror/Thriller</span>
+        <span class="year">2017</span>
+    </div>
+</div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="Images/tarot.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>6.3</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\tarot trailer\TAROT  – Official Trailer (HD).mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Tarot</h3>
+    <div class="card-info">
+        <span class="genre">Drama/Fantasy</span>
+        <span class="year">2009</span>
+    </div>
+</div>
+</div>
+            </div>
+        </div>
+
+
+        <!-- Coming Soon Section -->        
+         <div class="section mt-5">
+            <h2>Coming Soon</h2>
+
+            <div class="movies-grid">
+
+                <div class="card-body">
+
+            <div class="movie-card">
+                <div class="card-head">
+                    <img src="Images/despicable.jpg" alt="" class="card-img">
+                    <div class="card-overlay">
+                        <div class="bookmark">
+                            <ion-icon name="bookmark-outline"></ion-icon>
+                        </div>
+                        <div class="rating">
+                            <ion-icon name="star-outline"></ion-icon>
+                            <span>6.3</span>
+                        </div>
+                        <div class="play">
+                            <a href="videos/despicable me 4 trailer/Despicable Me 4   Official Trailer 2.mp4" class="play-trailer">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Despicable Me 4</h3>
+                    <div class="card-info">
+                        <span class="genre">Animation/Comedy</span>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+            </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="Images/Wolverine and deadpool.jpg" alt="" class="card-img">
+                <div class="card-overlay">
+                    <div class="bookmark">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                    <div class="rating">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>10</span>
+                    </div>
+                    <div class="play">
+                        <a href="videos/deadpool trailer/Deadpool & Wolverine   Official Trailer   In Theaters July 26.mp4" class="play-trailer">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Wolverine and Deadpool</h3>
+                <div class="card-info">
+                    <span class="genre">Action/Comedy</span>
+                    <span class="year">2024</span>
+                </div>
+            </div>
+        </div>
+    <div class="movie-card">
+        <div class="card-head">
+            <img src="C:\Users\lamer\website\Images\joker 230.jpg" alt="" class="card-img">
+            <div class="card-overlay">
+                <div class="bookmark">
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>246</span>
+                </div>
+                <div class="play">
+                    <a href="C:\Users\lamer\website\videos\joker trailer\Joker - Official Teaser Trailer - In Theaters October 4.mp4" class="play-trailer">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Joker:Folie a Deux</h3>
+            <div class="card-info">
+                <span class="genre">Crime/Musical</span>
+                <span class="year">2024</span>
+            </div>
+        </div>
+    </div>
+<div class="movie-card">
+    <div class="card-head">
+        <img src="Images/despicable.jpg" alt="" class="card-img">
+        <div class="card-overlay">
+            <div class="bookmark">
+                <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="rating">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>6.8</span>
+            </div>
+            <div class="play">
+                <a href="C:\Users\lamer\website\videos\quiet place trailer\A Quiet Place Day One   Official Trailer   Paramount Pictures UK.mp4" class="play-trailer">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <h3 class="card-title">A Quiet Place:Day One</h3>
+        <div class="card-info">
+            <span class="genre">Drama/Horror</span>
+            <span class="year">2024</span>
+        </div>
+    </div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="C:\Users\lamer\website\Images\if 230.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>6.5</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\if trailer\IF - Official Trailer (2024) Ryan Reynolds.mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">If</h3>
+    <div class="card-info">
+        <span class="genre">Animation/Comedy</span>
+        <span class="year">2024</span>
+    </div>
+</div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="C:\Users\lamer\website\Images\Inside out.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>7.9</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\inside out 2 trailer 2024\Inside Out 2   Official Trailer.mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Inside Out 2</h3>
+    <div class="card-info">
+        <span class="genre">Animation/Comedy</span>
+        <span class="year">2024</span>
+    </div>
+</div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="C:\Users\lamer\website\Images\venom.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>185</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\venom the last dance trailer\VENOM 3 THE LAST DANCE – TRAILER.mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Venom:The Last Dance</h3>
+    <div class="card-info">
+        <span class="genre">Action/Adventure</span>
+        <span class="year">2024</span>
+    </div>
+</div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="C:\Users\lamer\website\Images\abigail 230 by 330.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>6.6</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\tarot trailer\Abigail   Official Trailer.mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Abigail</h3>
+    <div class="card-info">
+        <span class="genre">Horror/Thriller</span>
+        <span class="year">2024</span>
+    </div>
+</div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="C:\Users\lamer\website\Images\Bad Boys.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>7.0</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\bad boys trailer 2024\BAD BOYS RIDE OR DIE – Official Trailer (HD).mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Bad Boys:Ride or Die</h3>
+    <div class="card-info">
+        <span class="genre">Action/Comedy</span>
+        <span class="year">2024</span>
+    </div>
+</div>
+</div>
+<div class="movie-card">
+<div class="card-head">
+    <img src="C:\Users\lamer\website\Images\Challengers.jpg" alt="" class="card-img">
+    <div class="card-overlay">
+        <div class="bookmark">
+            <ion-icon name="bookmark-outline"></ion-icon>
+        </div>
+        <div class="rating">
+            <ion-icon name="star-outline"></ion-icon>
+            <span>7.3</span>
+        </div>
+        <div class="play">
+            <a href="C:\Users\lamer\website\videos\challengers trailer\CHALLENGERS   Official Trailer 2.mp4" class="play-trailer">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="card-body">
+    <h3 class="card-title">Challengers</h3>
+    <div class="card-info">
+        <span class="genre">Romance/Comedy</span>
+        <span class="year">2024</span>
+    </div>
+</div>
+</div>
+            </div>
+        </div>
+
+
+         </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+          
+            <div class="footer-brand">
+              <img src="Images/logo Warner Bros.jpg" alt="" class="footer-logo">
+              <p class="slogan">Movies & TV Shows, Online cinema,
+                Movie database HTML Template.</p>
+    
+    
+              <div class="social-link">
+    
+                <a href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+    
+              </div>
+            </div>
+    
+    
+            <div class="footer-links">
+              <ul>
+    
+                <h4 class="link-heading">Warner Bros</h4>
+    
+                <li class="link-item"><a href="#">About us</a></li>
+                <li class="link-item"><a href="#">My profile</a></li>
+                <li class="link-item"><a href="#">Pricing plans</a></li>
+                <li class="link-item"><a href="#">Contacts</a></li>
+    
+              </ul>
+    
+              <ul>
+    
+                
+            </div>
+    
+          </div>
+    
+          <div class="footer-copyright">
+    
+            <div class="copyright">
+              <p>&copy; copyright 2024 Warner Bros</p>
+            </div>
+    
+            <div class="wrapper">
+              <a href="privacy-policy.html">Privacy policy</a>
+              <a href="terms-and-conditions.html">Terms and conditions</a>
+            </div>
+    
+          </div>
+    
+        </footer>
+
+        <script src="./assets/css/main.css"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</body>
+</html>
